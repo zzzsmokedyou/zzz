@@ -47,7 +47,7 @@ L_6_:NewButton(
     "Beam niggas down",
     function()
 	getgenv().AimPart = "HumanoidRootPart"
-	getgenv().AimlockKey = "q"
+	getgenv().AimlockKey = "c"
 	getgenv().AimRadius = 30
 	getgenv().ThirdPerson = true
 	getgenv().FirstPerson = true
@@ -301,9 +301,9 @@ local L_9_ = L_4_:NewTab("Silent Aim Dot")
 local L_10_ = L_9_:NewSection("Zzz's Hub")
 L_10_:NewButton(
     "Silent Aimlock",
-    "Key is Q.",
+    "Key is C.",
     function()
-	_G.KEY = "q"
+	_G.KEY = "c"
 	_G.PART = "LowerTorso"
 	_G.PRED = 0.032
 	_G.Frame = Vector3.new(0, 0.53, 0)
@@ -468,7 +468,7 @@ L_10_:NewButton(
 	game.Players.LocalPlayer.Chatted:Connect(
             function(L_112_arg0)
 		if L_112_arg0 == "/e hrp" then
-			_G.KEY = "q"
+			_G.KEY = "c"
 			_G.AIR = 0.00005
 			_G.PART = "HumanoidRootPart"
 			_G.PRED = 0.032
@@ -479,7 +479,7 @@ L_10_:NewButton(
 	game.Players.LocalPlayer.Chatted:Connect(
             function(L_113_arg0)
 		if L_113_arg0 == "/e lt" then
-			_G.KEY = "q"
+			_G.KEY = "c"
 			_G.AIR = 0.00005
 			_G.PART = "LowerTorso"
 			_G.PRED = 0.032
@@ -490,7 +490,7 @@ L_10_:NewButton(
 	game.Players.LocalPlayer.Chatted:Connect(
             function(L_114_arg0)
 		if L_114_arg0 == "Screensharing" then
-			_G.KEY = "q"
+			_G.KEY = "c"
 			_G.AIR = 0.00005
 			_G.PART = "LowerTorso"
 			_G.PRED = 0.033
@@ -713,7 +713,7 @@ L_14_:NewButton(
 			B = 0,
 			L = 0,
 			R = 0,
-			Q = 0,
+			C = 0,
 			E = 0
 		}
 		local L_160_ = {
@@ -721,7 +721,7 @@ L_14_:NewButton(
 			B = 0,
 			L = 0,
 			R = 0,
-			Q = 0,
+			C = 0,
 			E = 0
 		}
 		local L_161_ = 5
@@ -742,12 +742,12 @@ L_14_:NewButton(
 						game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").PlatformStand =
                                     true
 					end
-					if L_159_.L + L_159_.R ~= 0 or L_159_.F + L_159_.B ~= 0 or L_159_.Q + L_159_.E ~= 0 then
+					if L_159_.L + L_159_.R ~= 0 or L_159_.F + L_159_.B ~= 0 or L_159_.C + L_159_.E ~= 0 then
 						L_161_ = 50
-					elseif not (L_159_.L + L_159_.R ~= 0 or L_159_.F + L_159_.B ~= 0 or L_159_.Q + L_159_.E ~= 0) and L_161_ ~= 0 then
+					elseif not (L_159_.L + L_159_.R ~= 0 or L_159_.F + L_159_.B ~= 0 or L_159_.C + L_159_.E ~= 0) and L_161_ ~= 0 then
 						L_161_ = 0
 					end
-					if L_159_.L + L_159_.R ~= 0 or L_159_.F + L_159_.B ~= 0 or L_159_.Q + L_159_.E ~= 0 then
+					if L_159_.L + L_159_.R ~= 0 or L_159_.F + L_159_.B ~= 0 or L_159_.C + L_159_.E ~= 0 then
 						L_164_.velocity =
                                     (workspace.CurrentCamera.CoordinateFrame.lookVector * (L_159_.F + L_159_.B) +
                                     workspace.CurrentCamera.CoordinateFrame *
@@ -829,7 +829,7 @@ L_14_:NewButton(
 				else
 					L_159_.Q = iyflyspeed * 2
 				end
-			elseif QEfly and L_165_arg0:lower() == "q" then
+			elseif QEfly and L_165_arg0:lower() == "c" then
 				if L_157_arg0 then
 					L_159_.E = -vehicleflyspeed * 2
 				else
@@ -850,7 +850,7 @@ L_14_:NewButton(
 				L_159_.R = 0
 			elseif L_166_arg0:lower() == "e" then
 				L_159_.Q = 0
-			elseif L_166_arg0:lower() == "q" then
+			elseif L_166_arg0:lower() == "c" then
 				L_159_.E = 0
 			end
 		end
