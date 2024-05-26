@@ -46,7 +46,7 @@ L_6_:NewButton(
     "Aimlock",
     "Beam niggas down",
     function()
-	getgenv().AimPart = "HumanoidRootPart"
+	getgenv().AimPart = "Head"
 	getgenv().AimlockKey = "c"
 	getgenv().AimRadius = 30
 	getgenv().ThirdPerson = true
